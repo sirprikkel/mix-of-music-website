@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Mix of Music</title>
+    <meta name="description" content="Neem contact op met Mix of Music. Lid worden? Optreden boeken? We horen graag van je.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="9e0b6007-68cd-4dec-8c91-8bd48f249204"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#7C3AED', secondary: '#A78BFA', cta: '#22C55E', bg: '#FAF5FF', textdark: '#4C1D95' }, fontFamily: { display: ['Righteous','sans-serif'], sans: ['Poppins','sans-serif'] } } } }
+    </script>
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Righteous', sans-serif; }
+        .mobile-menu { transform: translateX(100%); transition: transform 300ms ease; }
+        .mobile-menu.open { transform: translateX(0); }
+    </style>
+</head>
+<body class="bg-bg text-textdark">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3"><img src="images/logo-small.jpg" alt="Mix of Music logo" class="h-10 w-10 rounded-full"><span class="font-display text-primary text-xl">Mix of Music</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Home</a>
+                <a href="over-ons.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Over Ons</a>
+                <a href="optredens.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Optredens</a>
+                <a href="repertoire.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Repertoire</a>
+                <a href="contact.html" class="bg-cta text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-colors duration-200 cursor-pointer">Contact</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-xl z-50 p-8">
+        <button id="closeMenu" class="absolute top-4 right-4 text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        <div class="flex flex-col gap-6 mt-12">
+            <a href="index.html" class="text-textdark font-semibold text-lg">Home</a>
+            <a href="over-ons.html" class="text-textdark font-semibold text-lg">Over Ons</a>
+            <a href="optredens.html" class="text-textdark font-semibold text-lg">Optredens</a>
+            <a href="repertoire.html" class="text-textdark font-semibold text-lg">Repertoire</a>
+            <a href="contact.html" class="text-primary font-semibold text-lg">Contact</a>
+        </div>
+    </div>
+
+    <section class="pt-24 pb-16 bg-gradient-to-b from-primary to-secondary px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-display text-5xl sm:text-6xl text-white mb-4">Contact</h1>
+            <p class="text-xl text-white/80">Lid worden, optreden boeken of gewoon een vraag?</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Info -->
+            <div>
+                <h2 class="font-display text-3xl text-textdark mb-8">Neem Contact Op</h2>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-md">
+                        <h3 class="font-display text-xl text-primary mb-2">Repetities</h3>
+                        <p class="text-textdark/70">Elke donderdagavond van 20:00 tot 22:00 uur</p>
+                        <p class="text-textdark/70">Vidi Reo, Van Kesselplaats 2, Ravenstein</p>
+                        <p class="text-textdark/60 mt-2 text-sm">Rond 21:00 uur korte pauze. We beginnen altijd met ademhalingsoefeningen en inzingen.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-md">
+                        <h3 class="font-display text-xl text-primary mb-2">Over de vereniging</h3>
+                        <p class="text-textdark/80 font-medium">Annemiek Zwartkruis, secretaris</p>
+                        <p class="text-textdark/70">Roesterd 39, 5371 MS Ravenstein</p>
+                        <p class="text-textdark/70">Tel: <a href="tel:0642416864" class="text-primary hover:underline cursor-pointer">06 42416864</a></p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-md">
+                        <h3 class="font-display text-xl text-primary mb-2">Optreden boeken</h3>
+                        <p class="text-textdark/80 font-medium">Diana van Demen</p>
+                        <p class="text-textdark/70">Tel: <a href="tel:0616646160" class="text-primary hover:underline cursor-pointer">06 16646160</a></p>
+                        <p class="text-textdark/70">Email: <a href="mailto:dianavandemen@ziggo.nl" class="text-primary hover:underline cursor-pointer">dianavandemen@ziggo.nl</a></p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-md">
+                        <h3 class="font-display text-xl text-primary mb-2">Lid Worden?</h3>
+                        <p class="text-textdark/70">Je mag eerst drie repetities komen proeven of het je bevalt om samen met ons te zingen. Heb je nog nooit eerder gezongen? Geen probleem! Samen met Lex (de dirigent) ga je kijken bij welke stemgroep jij het beste tot je recht komt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulier -->
+            <div>
+                <h2 class="font-display text-3xl text-textdark mb-8">Stuur een Bericht</h2>
+                <form action="mailto:dianavandemen@ziggo.nl" method="POST" enctype="text/plain" class="space-y-5">
+                    <div>
+                        <label for="naam" class="block text-sm font-medium text-textdark mb-1">Naam</label>
+                        <input type="text" id="naam" name="naam" required class="w-full px-4 py-3 rounded-xl border border-secondary/30 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-textdark mb-1">E-mail</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-secondary/30 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all">
+                    </div>
+                    <div>
+                        <label for="telefoon" class="block text-sm font-medium text-textdark mb-1">Telefoon</label>
+                        <input type="tel" id="telefoon" name="telefoon" class="w-full px-4 py-3 rounded-xl border border-secondary/30 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all">
+                    </div>
+                    <div>
+                        <label for="onderwerp" class="block text-sm font-medium text-textdark mb-1">Onderwerp</label>
+                        <select id="onderwerp" name="onderwerp" class="w-full px-4 py-3 rounded-xl border border-secondary/30 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all cursor-pointer">
+                            <option value="lid-worden">Lid worden</option>
+                            <option value="optreden">Optreden boeken</option>
+                            <option value="sponsor">Sponsor / Vriend worden</option>
+                            <option value="overig">Overig</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="bericht" class="block text-sm font-medium text-textdark mb-1">Bericht</label>
+                        <textarea id="bericht" name="bericht" rows="5" required class="w-full px-4 py-3 rounded-xl border border-secondary/30 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-cta text-white py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all duration-200 cursor-pointer">Verstuur Bericht</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-3xl text-textdark mb-6">Waar Vind Je Ons?</h2>
+            <div class="rounded-2xl overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.3!2d5.6399!3d51.7995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14a4a4a4a4a4a%3A0x0!2sVidi+Reo+Ravenstein!5e0!3m2!1snl!2snl!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Locatie Vidi Reo Ravenstein"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/Vidi+Reo+Van+Kesselplaats+2+Ravenstein" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 text-primary font-semibold hover:underline cursor-pointer">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Open in Google Maps
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-textdark text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div><div class="flex items-center gap-3 mb-4"><img src="images/logo-small.jpg" alt="Mix of Music" class="h-10 w-10 rounded-full"><span class="font-display text-xl">Mix of Music</span></div><p class="text-white/70">Gemengd koor uit Ravenstein. Sinds 1997.</p></div>
+            <div><h3 class="font-display text-lg mb-4">Navigatie</h3><div class="flex flex-col gap-2"><a href="index.html" class="text-white/70 hover:text-white cursor-pointer">Home</a><a href="over-ons.html" class="text-white/70 hover:text-white cursor-pointer">Over Ons</a><a href="optredens.html" class="text-white/70 hover:text-white cursor-pointer">Optredens</a><a href="repertoire.html" class="text-white/70 hover:text-white cursor-pointer">Repertoire</a><a href="contact.html" class="text-white/70 hover:text-white cursor-pointer">Contact</a></div></div>
+            <div><h3 class="font-display text-lg mb-4">Contact</h3><div class="flex flex-col gap-2 text-white/70"><p>Vidi Reo, Van Kesselplaats 2</p><p>5371 MS Ravenstein</p><p>Tel: 06 42416864</p></div></div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm"><p>&copy; 2025 Mix of Music. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:underline cursor-pointer">Code Lieshout</a></p></div>
+    </footer>
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+        document.getElementById('closeMenu').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+    </script>
+</body>
+</html>

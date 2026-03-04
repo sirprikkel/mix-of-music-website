@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Ons – Mix of Music</title>
+    <meta name="description" content="Leer Mix of Music kennen: ons koor, de leiding, en onze geschiedenis sinds 1997 in Ravenstein.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="9e0b6007-68cd-4dec-8c91-8bd48f249204"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#7C3AED', secondary: '#A78BFA', cta: '#22C55E', bg: '#FAF5FF', textdark: '#4C1D95' }, fontFamily: { display: ['Righteous','sans-serif'], sans: ['Poppins','sans-serif'] } } } }
+    </script>
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Righteous', sans-serif; }
+        .mobile-menu { transform: translateX(100%); transition: transform 300ms ease; }
+        .mobile-menu.open { transform: translateX(0); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-bg text-textdark">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3"><img src="images/logo-small.jpg" alt="Mix of Music logo" class="h-10 w-10 rounded-full"><span class="font-display text-primary text-xl">Mix of Music</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Home</a>
+                <a href="over-ons.html" class="text-primary font-medium border-b-2 border-primary cursor-pointer">Over Ons</a>
+                <a href="optredens.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Optredens</a>
+                <a href="repertoire.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Repertoire</a>
+                <a href="contact.html" class="bg-cta text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-colors duration-200 cursor-pointer">Lid Worden</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-textdark cursor-pointer" aria-label="Menu"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-xl z-50 p-8">
+        <button id="closeMenu" class="absolute top-4 right-4 text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        <div class="flex flex-col gap-6 mt-12">
+            <a href="index.html" class="text-textdark font-semibold text-lg">Home</a>
+            <a href="over-ons.html" class="text-primary font-semibold text-lg">Over Ons</a>
+            <a href="optredens.html" class="text-textdark font-semibold text-lg">Optredens</a>
+            <a href="repertoire.html" class="text-textdark font-semibold text-lg">Repertoire</a>
+            <a href="contact.html" class="bg-cta text-white px-5 py-3 rounded-lg font-semibold text-center">Lid Worden</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-primary to-secondary px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-display text-5xl sm:text-6xl text-white mb-4">Over Ons</h1>
+            <p class="text-xl text-white/80">Het verhaal achter Mix of Music</p>
+        </div>
+    </section>
+
+    <!-- Het Koor -->
+    <section class="py-20 px-4 reveal">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-cta font-semibold text-sm uppercase tracking-wider">Ons Verhaal</span>
+                <h2 class="font-display text-4xl text-textdark mt-2 mb-6">Het Koor</h2>
+                <p class="text-lg text-textdark/80 leading-relaxed mb-4">In 1997 is Mix of Music opgericht en het koor bestaat nu uit 50 enthousiaste dames en heren. Omdat wij niet gebonden zijn aan een bepaalde stijl of levensovertuiging zingen wij, onze naam zegt het al, een muzikale mix aan nummers en stijlen: van musical tot rock en van pop tot een klassiek nummer.</p>
+                <p class="text-lg text-textdark/80 leading-relaxed">De nummers worden drie- tot soms acht-stemmig uitgevoerd en bij optredens wordt zonder bladmuziek gezongen.</p>
+            </div>
+            <img src="images/generale2.jpg" alt="Mix of Music generale repetitie" class="rounded-2xl shadow-xl">
+        </div>
+    </section>
+
+    <!-- Leiding -->
+    <section class="py-20 bg-white px-4 reveal">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-cta font-semibold text-sm uppercase tracking-wider">De Leiding</span>
+                <h2 class="font-display text-4xl text-textdark mt-2">Muzikale Begeleiding</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-bg rounded-2xl p-8 flex gap-6 items-start">
+                    <img src="images/dirigent.jpg" alt="Alex Wiersma, dirigent" class="w-24 h-24 rounded-full object-cover shadow-lg flex-shrink-0">
+                    <div>
+                        <h3 class="font-display text-2xl text-textdark">Alex Wiersma</h3>
+                        <p class="text-primary font-semibold mb-3">Dirigent</p>
+                        <p class="text-textdark/70">Studeerde aanvankelijk piano- en schoolmuziek aan het Brabants Conservatorium in Tilburg. Later verruilde hij deze opleiding voor orkest- en koordirectie aan het Sweelinck Conservatorium in Amsterdam bij Joop van Zon, waar hij in 1994 zijn studie afrondde. Hij werkte als begeleider mee bij het Internationaal Vocalisten Concours in 's-Hertogenbosch en was als assistent-dirigent verbonden aan de Vlaamse Opera.</p>
+                    </div>
+                </div>
+                <div class="bg-bg rounded-2xl p-8 flex gap-6 items-start">
+                    <img src="images/pianist.jpg" alt="Piet Bron, pianist" class="w-24 h-24 rounded-full object-cover shadow-lg flex-shrink-0">
+                    <div>
+                        <h3 class="font-display text-2xl text-textdark">Piet Bron</h3>
+                        <p class="text-primary font-semibold mb-3">Repetitor / Pianist</p>
+                        <p class="text-textdark/70">Al sinds 2001 actief als pianist bij Mix of Music. Samen met het koor heeft hij al verschillende grote producties vormgegeven. Het geeft een groot gevoel van saamhorigheid. Dat is het bijzondere van zo'n project, dat je niet meer met zingen bezig bent, maar dat je met enthousiasme en hard werken boven jezelf uit kunt stijgen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestuur -->
+    <section class="py-20 px-4 reveal">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-cta font-semibold text-sm uppercase tracking-wider">Organisatie</span>
+                <h2 class="font-display text-4xl text-textdark mt-2">Het Bestuur</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-textdark">Jelle Massink</h3>
+                    <p class="text-primary font-medium">Voorzitter</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-textdark">Annemiek Zwartkruis</h3>
+                    <p class="text-primary font-medium">Secretaris</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h3 class="font-display text-xl text-textdark">Janny Gruitrooij</h3>
+                    <p class="text-primary font-medium">Penningmeester</p>
+                </div>
+            </div>
+            <p class="text-center text-textdark/60 mt-6">Bestuursleden: Diana van Demen, Twan van de Veerdonk</p>
+        </div>
+    </section>
+
+    <!-- Lid worden -->
+    <section class="py-20 bg-gradient-to-r from-primary via-secondary to-primary px-4 reveal">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-4xl text-white mb-6">Lid Worden?</h2>
+            <p class="text-xl text-white/90 mb-4">Bezoek een repetitie op donderdagavond om acht uur in Vidi Reo te Ravenstein. Je mag eerst drie repetities komen proeven of het je bevalt om samen met ons te zingen.</p>
+            <p class="text-lg text-white/80 mb-8">Samen met Lex (de dirigent) ga je in de loop van tijd kijken bij welke stemgroep jij het beste tot je recht komt.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/90 transition-all duration-200 cursor-pointer">Neem Contact Op</a>
+        </div>
+    </section>
+
+    <!-- Vrienden -->
+    <section class="py-20 px-4 reveal">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-3xl text-textdark mb-4">Vrienden van Mix</h2>
+            <p class="text-textdark/70 text-lg mb-6">Ravensteinse ondernemers die ons koor een warm hart toedragen.</p>
+            <p class="text-textdark/60">Wilt u ons ook steunen? <a href="contact.html" class="text-primary font-semibold hover:underline cursor-pointer">Informeer naar de mogelijkheden</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-textdark text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-4"><img src="images/logo-small.jpg" alt="Mix of Music" class="h-10 w-10 rounded-full"><span class="font-display text-xl">Mix of Music</span></div>
+                <p class="text-white/70">Gemengd koor uit Ravenstein. Sinds 1997.</p>
+            </div>
+            <div>
+                <h3 class="font-display text-lg mb-4">Navigatie</h3>
+                <div class="flex flex-col gap-2">
+                    <a href="index.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Home</a>
+                    <a href="over-ons.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Over Ons</a>
+                    <a href="optredens.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Optredens</a>
+                    <a href="repertoire.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Repertoire</a>
+                    <a href="contact.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-display text-lg mb-4">Contact</h3>
+                <div class="flex flex-col gap-2 text-white/70">
+                    <p>Vidi Reo, Van Kesselplaats 2</p>
+                    <p>5371 MS Ravenstein</p>
+                    <p>Tel: 06 42416864</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm">
+            <p>&copy; 2025 Mix of Music. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:underline cursor-pointer">Code Lieshout</a></p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+        document.getElementById('closeMenu').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

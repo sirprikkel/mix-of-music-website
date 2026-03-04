@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optredens – Mix of Music</title>
+    <meta name="description" content="Overzicht van alle optredens van Mix of Music, van 1997 tot heden.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="9e0b6007-68cd-4dec-8c91-8bd48f249204"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#7C3AED', secondary: '#A78BFA', cta: '#22C55E', bg: '#FAF5FF', textdark: '#4C1D95' }, fontFamily: { display: ['Righteous','sans-serif'], sans: ['Poppins','sans-serif'] } } } }
+    </script>
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Righteous', sans-serif; }
+        .mobile-menu { transform: translateX(100%); transition: transform 300ms ease; }
+        .mobile-menu.open { transform: translateX(0); }
+        .timeline-item { position: relative; padding-left: 2rem; border-left: 3px solid #A78BFA; }
+        .timeline-item::before { content: ''; position: absolute; left: -8px; top: 0.5rem; width: 14px; height: 14px; border-radius: 50%; background: #7C3AED; border: 3px solid #FAF5FF; }
+    </style>
+</head>
+<body class="bg-bg text-textdark">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3"><img src="images/logo-small.jpg" alt="Mix of Music logo" class="h-10 w-10 rounded-full"><span class="font-display text-primary text-xl">Mix of Music</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Home</a>
+                <a href="over-ons.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Over Ons</a>
+                <a href="optredens.html" class="text-primary font-medium border-b-2 border-primary cursor-pointer">Optredens</a>
+                <a href="repertoire.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Repertoire</a>
+                <a href="contact.html" class="bg-cta text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-colors duration-200 cursor-pointer">Lid Worden</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-xl z-50 p-8">
+        <button id="closeMenu" class="absolute top-4 right-4 text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        <div class="flex flex-col gap-6 mt-12">
+            <a href="index.html" class="text-textdark font-semibold text-lg">Home</a>
+            <a href="over-ons.html" class="text-textdark font-semibold text-lg">Over Ons</a>
+            <a href="optredens.html" class="text-primary font-semibold text-lg">Optredens</a>
+            <a href="repertoire.html" class="text-textdark font-semibold text-lg">Repertoire</a>
+            <a href="contact.html" class="bg-cta text-white px-5 py-3 rounded-lg font-semibold text-center">Lid Worden</a>
+        </div>
+    </div>
+
+    <section class="pt-24 pb-16 bg-gradient-to-b from-primary to-secondary px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-display text-5xl sm:text-6xl text-white mb-4">Optredens</h1>
+            <p class="text-xl text-white/80">Van Ravenstein tot Wenen — meer dan 25 jaar op het podium</p>
+        </div>
+    </section>
+
+    <!-- Recente Optredens met foto's -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-display text-3xl text-textdark mb-8">Recente Hoogtepunten</h2>
+
+            <div class="space-y-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md md:flex">
+                    <img src="images/wenen1.jpg" alt="Concert in Wenen" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-6">
+                        <p class="text-primary font-semibold text-sm">Mei 2025</p>
+                        <h3 class="font-display text-2xl text-textdark mt-1">Dobbelt klingt besser</h3>
+                        <p class="text-textdark/70 mt-2">Samen met koor unCHORrect een optreden gegeven in het Ev. Gemeindehaus der Immanuelkirche in Essen. Goede akoestiek en een enthousiast publiek.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md md:flex">
+                    <img src="images/koor-optreden.jpg" alt="Korenfestival" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-6">
+                        <p class="text-primary font-semibold text-sm">Maart 2025</p>
+                        <h3 class="font-display text-2xl text-textdark mt-1">Korenfestival Berghem</h3>
+                        <p class="text-textdark/70 mt-2">Deelname aan het korenfestival in de Berchplaets. Maar liefst 10 koren, goed gevulde zaal. Elk koor zong minimaal 1 a cappella nummer. Mix of Music behaalde een mooie 2e plaats.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md md:flex">
+                    <img src="images/kerstconcert2.jpg" alt="Kerstconcert" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-6">
+                        <p class="text-primary font-semibold text-sm">December 2024</p>
+                        <h3 class="font-display text-2xl text-textdark mt-1">Mix of Music geeft Kerstmis kleur</h3>
+                        <p class="text-textdark/70 mt-2">In VidiReo, op 13 en 14 december, stond Mix 2 maal op het podium met een kerstuitvoering met medewerking van enkele spelers van toneelvereniging "het Vlämke". Onder leiding van Lex Wiersma en regisseur Ruud den Dekker, op piano Piet Bron.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md md:flex">
+                    <img src="images/kaarslicht.jpg" alt="Donderdag jubileum" class="md:w-1/3 h-48 md:h-auto object-cover">
+                    <div class="p-6">
+                        <p class="text-primary font-semibold text-sm">Oktober 2022</p>
+                        <h3 class="font-display text-2xl text-textdark mt-1">Jubileumuitvoering "Donderdag"</h3>
+                        <p class="text-textdark/70 mt-2">Op 13, 14 en 15 oktober de jubileumuitvoering "Donderdag" opgevoerd. 15 oktober zelfs 2 maal. Voor een super enthousiast publiek, onder leiding van Lex Wiersma, regie Gerda Klievink, met een combo, zanger Marc van Demen, danser Renzo van Beuningen, en 2 gastkoren: Karakter en Noiz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tijdlijn -->
+    <section class="py-20 bg-white px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-display text-3xl text-textdark mb-10">Complete Tijdlijn</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-display text-2xl text-primary mb-4">2025</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>18 mei</strong> — Dobbelt klingt besser, samen met unCHORrect in Essen</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>23 maart</strong> — Korenfestival Berghem, 2e plaats</p></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display text-2xl text-primary mb-4">2024</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>13-14 dec</strong> — Kerstuitvoering "Mix of Music geeft Kerstmis kleur"</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>6 okt</strong> — Korenfestival Ravenstein met Crescens, la Orféon, Sluiszangers</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>2 juni</strong> — Korenfestival Bemmel zingt</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>6 april</strong> — Lente benefietconcert Luciakerk Ravenstein</p></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display text-2xl text-primary mb-4">2022</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>13-15 okt</strong> — Jubileumuitvoering "Donderdag" in Vidi Reo</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>12 juni</strong> — Optreden bij Wilskracht Stadsbierbrouwerij</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>22 mei</strong> — Da's Passie in de St. Josefkerk Oss</p></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display text-2xl text-primary mb-4">2019</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>13-14 dec</strong> — Mix bij Kaarslicht</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>23 juni</strong> — Grachtenconcert met Big Band Ravenstein</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>2 juni</strong> — Völkoren in Middelburg</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>17 maart</strong> — Koren in Wijchen, theater 't Mozaïek</p></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display text-2xl text-primary mb-4">2018</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>12 mei</strong> — Concert Frühlingsgrüsze in Wenen</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>16 sept</strong> — Fantastival Oss</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>17 juni</strong> — Grachtenconcert bij Leerlooiershuisje</p></div>
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>4 maart</strong> — Korenfestival Berghem</p></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display text-2xl text-primary mb-4">2017</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item"><p class="text-textdark/80"><strong>28 okt - 5 nov</strong> — Fabulous MOMents: 4 uitverkochte voorstellingen, bijna 1000 bezoekers</p></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-textdark/50 mt-8 text-center italic">En nog vele tientallen optredens meer sinds 1998...</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-3xl text-white mb-4">Wilt u Mix of Music boeken?</h2>
+            <p class="text-white/80 mb-6">Neem contact op met Diana van Demen voor de mogelijkheden.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-xl font-semibold hover:bg-white/90 transition-all duration-200 cursor-pointer">Contact Opnemen</a>
+        </div>
+    </section>
+
+    <footer class="bg-textdark text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div><div class="flex items-center gap-3 mb-4"><img src="images/logo-small.jpg" alt="Mix of Music" class="h-10 w-10 rounded-full"><span class="font-display text-xl">Mix of Music</span></div><p class="text-white/70">Gemengd koor uit Ravenstein. Sinds 1997.</p></div>
+            <div><h3 class="font-display text-lg mb-4">Navigatie</h3><div class="flex flex-col gap-2"><a href="index.html" class="text-white/70 hover:text-white cursor-pointer">Home</a><a href="over-ons.html" class="text-white/70 hover:text-white cursor-pointer">Over Ons</a><a href="optredens.html" class="text-white/70 hover:text-white cursor-pointer">Optredens</a><a href="repertoire.html" class="text-white/70 hover:text-white cursor-pointer">Repertoire</a><a href="contact.html" class="text-white/70 hover:text-white cursor-pointer">Contact</a></div></div>
+            <div><h3 class="font-display text-lg mb-4">Contact</h3><div class="flex flex-col gap-2 text-white/70"><p>Vidi Reo, Van Kesselplaats 2</p><p>5371 MS Ravenstein</p><p>Tel: 06 42416864</p></div></div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm"><p>&copy; 2025 Mix of Music. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:underline cursor-pointer">Code Lieshout</a></p></div>
+    </footer>
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+        document.getElementById('closeMenu').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+    </script>
+</body>
+</html>

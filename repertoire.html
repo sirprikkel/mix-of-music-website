@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertoire – Mix of Music</title>
+    <meta name="description" content="Het repertoire van Mix of Music: van Adiemus tot Walking in the Air. Beluister geluidsfragmenten.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="9e0b6007-68cd-4dec-8c91-8bd48f249204"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#7C3AED', secondary: '#A78BFA', cta: '#22C55E', bg: '#FAF5FF', textdark: '#4C1D95' }, fontFamily: { display: ['Righteous','sans-serif'], sans: ['Poppins','sans-serif'] } } } }
+    </script>
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Righteous', sans-serif; }
+        .mobile-menu { transform: translateX(100%); transition: transform 300ms ease; }
+        .mobile-menu.open { transform: translateX(0); }
+        audio { width: 100%; height: 40px; border-radius: 8px; }
+        audio::-webkit-media-controls-panel { background: #FAF5FF; }
+    </style>
+</head>
+<body class="bg-bg text-textdark">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3"><img src="images/logo-small.jpg" alt="Mix of Music logo" class="h-10 w-10 rounded-full"><span class="font-display text-primary text-xl">Mix of Music</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Home</a>
+                <a href="over-ons.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Over Ons</a>
+                <a href="optredens.html" class="text-textdark font-medium hover:text-primary transition-colors duration-200 cursor-pointer">Optredens</a>
+                <a href="repertoire.html" class="text-primary font-medium border-b-2 border-primary cursor-pointer">Repertoire</a>
+                <a href="contact.html" class="bg-cta text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-colors duration-200 cursor-pointer">Lid Worden</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-xl z-50 p-8">
+        <button id="closeMenu" class="absolute top-4 right-4 text-textdark cursor-pointer"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        <div class="flex flex-col gap-6 mt-12">
+            <a href="index.html" class="text-textdark font-semibold text-lg">Home</a>
+            <a href="over-ons.html" class="text-textdark font-semibold text-lg">Over Ons</a>
+            <a href="optredens.html" class="text-textdark font-semibold text-lg">Optredens</a>
+            <a href="repertoire.html" class="text-primary font-semibold text-lg">Repertoire</a>
+            <a href="contact.html" class="bg-cta text-white px-5 py-3 rounded-lg font-semibold text-center">Lid Worden</a>
+        </div>
+    </div>
+
+    <section class="pt-24 pb-16 bg-gradient-to-b from-primary to-secondary px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-display text-5xl sm:text-6xl text-white mb-4">Repertoire</h1>
+            <p class="text-xl text-white/80">Een muzikale mix aan nummers en stijlen</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-lg text-textdark/80">Door de jaren heen heeft Mix of Music een uitgebreid archief opgebouwd. En soms wordt daar wat uitgeplukt om weer mee aan de slag te gaan. Blijft altijd leuk om "oude nummers" weer te mogen zingen.</p>
+        </div>
+    </section>
+
+    <!-- Nummers -->
+    <section class="pb-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-display text-3xl text-textdark mb-8">Recente Nummers</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Adiemus</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Afrika</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Ameno</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Baba Yetu</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Because we believe</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Brabant</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Con te partiro</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Crazy little thing</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Dancing in the street</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Dies Irae</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Feel it still</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Fix you</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Human</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">I want to break free</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">O Fortuna</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">One moment in time</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Rise like a phoenix</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Somebody to love</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">True colours</p></div>
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 text-center"><p class="font-medium text-textdark">Walking in the air</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geluidsfragmenten -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-display text-3xl text-textdark mb-4">Geluidsfragmenten</h2>
+            <p class="text-textdark/60 mb-8">Opnames: Piet Bron</p>
+
+            <div class="mb-10">
+                <h3 class="font-display text-xl text-primary mb-4">Frühlingsgrüsze — Wenen, 12 mei 2018</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-medium text-textdark text-sm">O Fortuna</p>
+                            <audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/05/01-Mix-of-Music-O-Fortuna.mp3" type="audio/mpeg"></audio>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-medium text-textdark text-sm">The rhythm of life</p>
+                            <audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/05/03-Mix-of-Music-The-Rhythm-of-Life.mp3" type="audio/mpeg"></audio>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-medium text-textdark text-sm">Adiemus</p>
+                            <audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/05/06-Mix-of-Music-Adiemus.mp3" type="audio/mpeg"></audio>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-medium text-textdark text-sm">Rise like a phoenix</p>
+                            <audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/05/07-Mix-of-Music-Rise-Like-a-Phoenix.mp3" type="audio/mpeg"></audio>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-medium text-textdark text-sm">Home</p>
+                            <audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/05/09-Mix-of-Music-Home.mp3" type="audio/mpeg"></audio>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-medium text-textdark text-sm">Dubula</p>
+                            <audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/05/10-Mix-of-Music-Dubula.mp3" type="audio/mpeg"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-display text-xl text-primary mb-4">Fabulous MOMents — okt/nov 2017</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-secondary rounded-full flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="flex-1"><p class="font-medium text-textdark text-sm">Dies Irae</p><audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/03/Dies-Irae.mp3" type="audio/mpeg"></audio></div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-secondary rounded-full flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="flex-1"><p class="font-medium text-textdark text-sm">Somebody to love</p><audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/03/12-Somebody-to-love.mp3" type="audio/mpeg"></audio></div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-secondary rounded-full flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="flex-1"><p class="font-medium text-textdark text-sm">Walking in the air</p><audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/03/09-Walking-in-the-air-Intros-koor-Mirte-Hoogstede.mp3" type="audio/mpeg"></audio></div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-secondary rounded-full flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="flex-1"><p class="font-medium text-textdark text-sm">One moment in time</p><audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/03/14-One-moment-in-time.mp3" type="audio/mpeg"></audio></div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-bg rounded-xl p-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-secondary rounded-full flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="flex-1"><p class="font-medium text-textdark text-sm">Oceaan</p><audio controls preload="none"><source src="https://mixofmusic.nl/wp-content/uploads/2018/03/27-Oceaan.mp3" type="audio/mpeg"></audio></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-textdark text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div><div class="flex items-center gap-3 mb-4"><img src="images/logo-small.jpg" alt="Mix of Music" class="h-10 w-10 rounded-full"><span class="font-display text-xl">Mix of Music</span></div><p class="text-white/70">Gemengd koor uit Ravenstein. Sinds 1997.</p></div>
+            <div><h3 class="font-display text-lg mb-4">Navigatie</h3><div class="flex flex-col gap-2"><a href="index.html" class="text-white/70 hover:text-white cursor-pointer">Home</a><a href="over-ons.html" class="text-white/70 hover:text-white cursor-pointer">Over Ons</a><a href="optredens.html" class="text-white/70 hover:text-white cursor-pointer">Optredens</a><a href="repertoire.html" class="text-white/70 hover:text-white cursor-pointer">Repertoire</a><a href="contact.html" class="text-white/70 hover:text-white cursor-pointer">Contact</a></div></div>
+            <div><h3 class="font-display text-lg mb-4">Contact</h3><div class="flex flex-col gap-2 text-white/70"><p>Vidi Reo, Van Kesselplaats 2</p><p>5371 MS Ravenstein</p><p>Tel: 06 42416864</p></div></div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm"><p>&copy; 2025 Mix of Music. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:underline cursor-pointer">Code Lieshout</a></p></div>
+    </footer>
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+        document.getElementById('closeMenu').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+    </script>
+</body>
+</html>
